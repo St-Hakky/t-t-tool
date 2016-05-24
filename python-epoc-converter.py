@@ -19,3 +19,6 @@ print(epoch)
 
 print(epoch_to_datetime(epoch))
 # => 2012-10-10 21:12:17
+s = epoch_to_datetime(epoch)
+tstr = s.strftime('%Y/%m/%d  %H:%M:%S')
+print tstr[12:14]
